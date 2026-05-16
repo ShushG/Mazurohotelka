@@ -1,1 +1,1 @@
-# mazurohotelka.github.io
+# shushg.github.io
