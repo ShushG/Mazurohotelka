@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Счетчик дней</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #222;
+            color: #fff;
+            margin-top: 100px;
+        }
+        #number {
+            font-size: 72px;
+            font-weight: bold;
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Прошло дней з моменту старту:</h1>
+    <div id="number">0</div>
+
+    <script>
+        // Укажи дату старта (Год, Месяц - 1, День)
+        // В JS месяцы считаются с 0 (январь = 0, февраль = 1, и т.д.)
+        // Например, 1 мая 2026 года:
+        const startDate = new Date(2026, 4, 1); 
+        const currentDate = new Date();
+
+        // Считаем разницу в миллисекундах
+        const differenceInTime = currentDate.getTime() - startDate.getTime();
+
+        // Переводим миллисекунды в дни (1 день = 1000мс * 60с * 60м * 24ч)
+        const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
+
+        // Выводим число на экран (если разница меньше 0, покажет 0)
+        document.getElementById('number').innerText = differenceInDays >= 0 ? differenceInDays : 0;
+    </script>
+</body>
+</html>
