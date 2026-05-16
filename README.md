@@ -1,1 +1,1 @@
-# Mazurohotelka
+# mazurohotelka.github.io
