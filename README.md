@@ -1,1 +1,1 @@
-# Tiktok streak but web (web app to kill tiktok streak addiction with your friend) [not english language]
+# Tiktok streak but web (web app to kill tiktok streak addiction with your friend) [not english language]{works on google firebase u just have to change firebase config in code idk just ask gemini so ur brain will melt}
