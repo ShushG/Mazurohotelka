@@ -25,12 +25,28 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* Золотий градієнт для числа */
         #number {
             font-size: 72px;
             font-weight: bold;
-            margin-bottom: 30px;
+            margin-bottom: 5px;
             background: linear-gradient(to bottom, #FFD700, #B8860B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Фіолетовий градієнт для тексту */
+        .eternal-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: linear-gradient(to left, #4b0082, #e0b0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Блакитний градієнт для вогника */
+        .fire-icon {
+            font-size: 50px;
+            margin-bottom: 25px;
+            background: linear-gradient(to bottom, #00d2ff, #005f73);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -73,7 +89,6 @@
             font-size: 16px;
             box-sizing: border-box;
         }
-        /* Червоно-бордовий градієнт для кнопки */
         button {
             background: linear-gradient(to bottom, #ff4757, #8b0000);
             color: white;
@@ -96,6 +111,10 @@
         
         <h3>Прошло дней:</h3>
         <div id="number">0</div>
+        
+        <!-- Нові елементи -->
+        <div class="eternal-text">"Хащацький вічний"</div>
+        <div class="fire-icon">🔥</div>
 
         <div class="board">
             <div class="field-title">M</div>
